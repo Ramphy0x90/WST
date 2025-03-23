@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "WST": {
+    "wst": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "WST:build:production"
+              "buildTarget": "wst:build:production"
             },
             "development": {
-              "buildTarget": "WST:build:development"
+              "buildTarget": "wst:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "WST:build"
+            "buildTarget": "wst:build"
           }
         },
         "test": {
